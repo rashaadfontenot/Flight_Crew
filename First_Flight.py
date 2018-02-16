@@ -1,14 +1,14 @@
 captain_name = 'Rashaad'
-captain_phone = '206-351-4856'
+captain_phone = '206-305-4456'
 captain_confirm = 'C)NF!Rm'
 captain_value = 100
 
 copilot_1_name = 'Sahara'
-copilot_1_phone = '206-214-7979'
+copilot_1_phone = '206-324-7979'
 copilot_1_confirm = 'C)NF!Rm#)^$E'
 copilot_1_value = 100
 copilot_2_name = 'Shea'
-copilot_2_phone = '206-701-1400'
+copilot_2_phone = '206-861-1400'
 copilot_2_confirm = 'C)NF!RmDJNN**SS'
 copilot_2_value = 100
 
