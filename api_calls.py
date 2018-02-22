@@ -1,13 +1,13 @@
 import requests
-from urllib.parse import quote, urlencode
+from urllib.parse import urlencode
 import xml.etree.ElementTree as ET
 
 #Zillow API ID
 zws_id = 'X1-ZWz1fu1bkc2f4b_4aijl'
 
 #Enter Street Address
-address = input()
-citystatezip = input()
+address = '1311 S. L. St'
+citystatezip = 'Tacoma, WA'
 house = urlencode({'address': address,
                    'citystatezip': citystatezip})
 
