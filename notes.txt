@@ -1,0 +1,74 @@
+https://www.math.cornell.edu/~numb3rs/spulido/Numb3rs_108/Numb3rs_108.html
+
+
+Great explanation of qeometric sequence
+http://flc.losrios.edu/~eitel/All%20PDFS/M-370%20PDFS/M-370%20C-12%20Series/M-370%2012-3A%20Lec%20Geo%20Seq.pdf
+
+https://stackoverflow.com/questions/16333296/how-do-you-create-nested-dict-in-python
+
+
+
+
+captain_name = 'Rashaad'
+captain_phone = '206-305-4456'
+captain_confirm = 'C)NF!Rm'
+captain_value = 100
+
+copilot_name = 'Sahara'
+copilot_phone = '206-324-7979'
+copilot_confirm = 'C)NF!Rm#)^$E'
+copilot_value = 100
+copilot_2_name = 'Shea'
+copilot_2_phone = '206-861-1400'
+copilot_2_confirm = 'C)NF!RmDJNN**SS'
+copilot_2_value = 100
+
+crew_name = 'Quincy'
+crew_phone = '206-544-765'
+crew_confirm = 'C)NF!Rm#dDWW)^$E'
+crew_value = 100
+crew_2_name = 'Jess'
+crew_2_phone = '206-851-1400'
+crew_2_confirm = 'C)NF!RmDJNN**SS'
+crew_2_value = 100
+crew_3_name = 'Steven'
+crew_3_phone = '206-214-6579'
+crew_3_confirm = 'C)NF!GEERm#)^$E'
+crew_3_value = 100
+crew_4_name = 'Michael'
+crew_4_phone = '206-751-1550'
+crew_4_confirm = 'C)NFGE!RmDJNN**SS'
+crew_4_value = 100
+
+pass_name = 'JZ'
+pass_phone = '946-544-765'
+pass_confirm = 'C)NFGEE#dDWW)^$E'
+pass_value = 100
+pass_2_name = 'JSwag'
+pass_2_phone = '206-935-1400'
+pass_2_confirm = 'C)NF!RmDJN'
+pass_2_value = 100
+pass_3_name = 'Ted'
+pass_3_phone = '745-214-6579'
+pass_3_confirm = 'C)gggEERm#)^$E'
+pass_3_value = 100
+pass_4_name = 'Jordan'
+pass_4_phone = '206-751-9830'
+pass_4_confirm = 'C)NDJNN**SS'
+pass_4_value = 100
+pass_5_name = 'JD'
+pass_5_phone = '506-544-765'
+pass_5_confirm = 'C)NdddDWW)^$E'
+pass_5_value = 100
+pass_6_name = 'Mike T'
+pass_6_phone = '206-851-4832'
+pass_6_confirm = 'C)NF!dddf((SS'
+pass_6_value = 100
+pass_7_name = 'Hank'
+pass_7_phone = '206-921-6579'
+pass_7_confirm = 'C)NFm#)^$E'
+pass_7_value = 100
+pass_8_name = 'Harold'
+pass_8_phone = '206-751-0293'
+pass_8_confirm = 'C)NFGE!RmD8222S'
+pass_8_value = 100
