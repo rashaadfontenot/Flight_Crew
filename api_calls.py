@@ -44,7 +44,7 @@ results = tree.find('response/results/result')
 def get_results():
     dict = {}
     for i in results:
-        dict = (i.text)
+        print(i.text)
 
 # print('The current value for {} is ${}!'.format(address, zestimate))
 # print('This house has {} bathrooms'.format(bathrooms))
@@ -57,5 +57,4 @@ def get_results():
 # print('The coordinates are {}, {}'.format(latitude, longitude))
 
 
-for child in tree:
-    print(child.tag, child.attrib)
+get_results()
