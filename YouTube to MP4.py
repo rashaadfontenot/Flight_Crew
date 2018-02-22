@@ -1,6 +1,5 @@
-import pytube
 from pytube import YouTube
-import pprint
+
 
 
 def download():
@@ -11,7 +10,8 @@ def download():
     title = yt.title
     stream = yt.streams.first()
     stream.download()
-    print('Your video {} is finished downloading. Check your folder!'.format(title))
+    print('Your video "{}" has finished downloading. Check your folder!'.format(title)) # add file location
+
 
 
 download()
