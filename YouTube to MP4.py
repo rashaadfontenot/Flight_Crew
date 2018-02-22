@@ -4,14 +4,14 @@ import pprint
 
 
 def download():
-    print('Enter YouTube link: https://www.youtube.com/watch?v=cTtILc5SS98')
-    link = 'https://www.youtube.com/watch?v=cTtILc5SS98'
+    print('Enter YouTube link: ')
+    link = input()
+    print('Video is downloading...')
     yt = YouTube(link)
-    #pprint.pprint(yt.streams.filter(progressive=True).all())
     title = yt.title
-    stream =  yt.streams.first()
+    stream = yt.streams.first()
     stream.download()
-    print('Your video {} is downloaded!'.format(title))
+    print('Your video {} is finished downloading. Check your folder!'.format(title))
 
 
 download()
