@@ -3,6 +3,7 @@ from decimal import Decimal
 import json
 import urllib
 import pprint
+from collections import Counter
 
 
 bucket = 'pythonfun'
@@ -16,6 +17,8 @@ def get_response():
     )
     #pprint.pprint(get_response)
     for label in get_response['Labels']:
-        print(label['Label']['Name'])
+        tag = label['Label']['Name']
+        print(tag)
+        Counter(tag)
 
 get_response()

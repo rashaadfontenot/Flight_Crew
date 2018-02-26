@@ -7,7 +7,7 @@ import urllib.parse
 
 def download_video():
     # Get YouTube link
-    link = 'https://www.youtube.com/watch?v=-zd62MxKXp8'
+    link = 'https://www.youtube.com/watch?v=bgC8RENjYcA'
     yt = YouTube(link)
     title = yt.title.replace("'", '')
     print(title)
@@ -31,6 +31,12 @@ def download_video():
     # Upload video to S3
     stream.download(output_path=upload_s3)
     print('Your video "{}" has finished downloading. Check your folder!'.format(title)) # add file location
+
+    # Send Video to rekognition API
+    rekognition = boto3.client('rekognition', 'us-east-1')
+    response = rekognition.start_label_detection(Video={"S3Object": {"Bucket": bucket_name, "Name": filename}})
+    job_id = response['JobId']
+    print(job_id)
 
 
 download_video()
