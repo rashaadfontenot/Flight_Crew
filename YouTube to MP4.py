@@ -7,7 +7,8 @@ import urllib.parse
 
 def download_video():
     # Get YouTube link
-    link = 'https://www.youtube.com/watch?v=bgC8RENjYcA'
+    print('Enter YouTube link below: ')
+    link = input()
     yt = YouTube(link)
     title = yt.title.replace("'", '')
     print(title)
