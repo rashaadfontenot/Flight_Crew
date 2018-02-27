@@ -7,10 +7,10 @@ import urllib.parse
 
 def download_video():
     # Get YouTube link
-    print('Input YouTube Link below: ')
+    print('Enter YouTube link below: ')
     link = input()
     yt = YouTube(link)
-    title = yt.title
+    title = yt.title.replace("'", '')
     print(title)
     stream = yt.streams.first()
     pprint.pprint(stream)
@@ -18,7 +18,7 @@ def download_video():
 
     # Create an S3 client
     s3 = boto3.client('s3')
-    filename = title + '.mp4'
+    filename = str(title + '.mp4').replace("'", '+')
     print('filename made')
     bucket_name = 'pythonfun'
     print('bucket made')
@@ -33,13 +33,11 @@ def download_video():
     stream.download(output_path=upload_s3)
     print('Your video "{}" has finished downloading. Check your folder!'.format(title)) # add file location
 
-    # Send Video to label and celebrity rekognition API
+    # Send Video to celebrity rekognition API
     rekognition = boto3.client('rekognition', 'us-east-1')
-    label_response = rekognition.start_label_detection(Video={"S3Object": {"Bucket": bucket_name, "Name": filename}})
-    celeb_response = rekognition.start_celebrity_recognition(Video={"S3Object": {"Bucket": bucket_name, "Name": filename}})
-    label_job_id = label_response['JobId']
-    celeb_job_id = celeb_response['JobId']
-    print('def get_response({}, {})'.format(label_job_id, celeb_job_id))
+    response = rekognition.start_celebrity_recognition(Video={"S3Object": {"Bucket": bucket_name, "Name": filename}})
+    job_id = response['JobId']
+    print(job_id)
 
 
 download_video()
